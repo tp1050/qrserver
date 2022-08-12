@@ -1,7 +1,7 @@
 # Import Library
 import cv2
 # Name of the QR Code Image file
-filename = "myQRcODE.jpg"
+filename = "qrcode_02.jpeg"
 # read the QRCODE image
 image = cv2.imread(filename)
 
@@ -16,6 +16,7 @@ data, vertices_array, binary_qrcode = detector.detectAndDecode(image)
 if vertices_array is not None:
   print("QRCode data:")
   print(len(data))
+  print(data)
   print(vertices_array)
 
 
